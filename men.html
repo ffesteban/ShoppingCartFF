@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Creating a Responsive Web Design</title>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" media="screen" href="bootstrap/css/screen.css">
+	</head>
+	<body>
+
+
+		<div id="page">
+
+			<header>
+				<a class="logo" tittle="Tiqui's Clothing Shop" href="https://firstfactory.com"><span>Tiqui Taca Clothing Shop</span></a>
+				<div class="hero">
+					<h1>Tiqui Taca Clothing Shop</h1>
+					<a class="btn" title="See our Clothing Shop" href="#">See our Clothing Shop</a>
+				</div>
+
+			</header>
+
+			<nav>
+				<ul>
+					<li>
+						<a tittle="Contact Us" href="index.html">Home</a>
+					</li>
+					<li>
+						<a tittle="Men" href="men.html" aria-haspopup="true">Men</a>
+						<ul>
+							<li>
+								<a tittle="Sub Link 1" href="#">Sub Link 1</a>
+							</li>
+							<li>
+								<a tittle="Sub Link 2" href="#">Sub Link 2</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a tittle="Women" href="#" aria-haspopup="true">Women</a>
+						<ul>
+							<li>
+								<a tittle="Sub Link 1" href="#">Sub Link 1</a>
+							</li>
+							<li>
+								<a tittle="Sub Link 2" href="#">Sub Link 2</a>
+							</li>
+							<li>
+								<a tittle="Sub Link 3" href="#" aria-haspopup="true">Sub Link 3</a>
+								<ul>
+									<li>
+										<a tittle="Sub Sub Link 1" href="#">Sub Link 1</a>
+									</li>
+									<li>
+										<a tittle="Sub Sub Link 2" href="#">Sub Link 2</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a tittle="Products" href="#">Sale</a>
+						<ul>
+							<li>
+								<a tittle="Sub Link 1" href="#">Sub Link 1</a>
+							</li>
+							<li>
+								<a tittle="Sub Link 2" href="#">Sub Link 2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+            </nav>
+            
+            <div class="container">
+                <h2>Men's Clothing</h2>
+                <div class="row">
+                    <div class="span3">
+                        <img src="images/Men/M01.jpg" alt="" />
+                        <h3>Shirt Quiksilver</h3>
+                        <span>Price: $25</span>
+                        <select id="Size1">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity1">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M01.jpg', 'Shirt Quiksilver', document.getElementById('Size1').value, document.getElementById('Quantity1').value, 25)">Add Item</button>
+                    </div>
+                    <div class="span3">
+                        <img src="images/Men/M02.jpg" alt="" />
+                        <h3>Hoddie Volcom</h3>
+                        <span>Price: $32</span>
+                        <select id="Size2">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity2">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M02.jpg', 'Hoddie Volcom', document.getElementById('Size2').value, document.getElementById('Quantity2').value, 32)">Add Item</button>
+                    </div>
+                    <div class="span3">
+                        <img src="images/Men/M03.jpg" alt="" />
+                        <h3>Shirt Billabong</h3>
+                        <span>Price: $18</span>
+                        <select id="Size3">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity3">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M03.jpg', 'Shirt Billabong', document.getElementById('Size3').value, document.getElementById('Quantity3').value, 18)">Add Item</button>
+                    </div>
+                    <div class="span3">
+                        <img src="images/Men/M04.jpg" alt="" />
+                        <h3>T-Shirt Hurley</h3>
+                        <span>Price: $14</span>
+                        <select id="Size4">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity4">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M04.jpg', 'T-Shirt Hurley', document.getElementById('Size4').value, document.getElementById('Quantity4').value, 14)">Add Item</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="span3">
+                        <img src="images/Men/M05.jpg" alt="" />
+                        <h3>Billabong Hoddie</h3>
+                        <span>Price: $46</span>
+                        <select id="Size5">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity5">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M05.jpg', 'Billabong Hoddie', document.getElementById('Size5').value, document.getElementById('Quantity5').value, 46)">Add Item</button>
+                    </div>
+                    <div class="span3">
+                        <img src="images/Men/M06.jpg" alt="" />
+                        <h3>Hoddie Volcom</h3>
+                        <span>Price: $31</span>
+                        <select id="Size6">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity6">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M06.jpg', 'Hoddie Volcom', document.getElementById('Size6').value, document.getElementById('Quantity6').value, 31)">Add Item</button>
+                    </div>
+                    <div class="span3">
+                        <img src="images/Men/M07.jpg" alt="" />
+                        <h3>Hoddie Hurley</h3>
+                        <span>Price: $22</span>
+                        <select id="Size7">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity7">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M07.jpg', 'Hoddie Hurley', document.getElementById('Size7').value, document.getElementById('Quantity7').value, 22)">Add Item</button>
+                    </div>
+                    <div class="span3">
+                        <img src="images/Men/M08.jpg" alt="" />
+                        <h3>T-Shirt Volcom</h3>
+                        <span>Price: $12</span>
+                        <select id="Size8">
+                            <span>Size</span>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select id="Quantity8">
+                            <span>Quantity</span>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-primary" onclick="addItem('images/Men/M08.jpg', 'T-Shirt Volcom', document.getElementById('Size8').value, document.getElementById('Quantity8').value, 12)">Add Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="span9">
+                        <h3>Checkout</h3>
+                        <table id="ShoppingCart" class="table table-striped table-hover">
+                            <tr>
+                                <th></th>
+                                <th>Item</th>
+                                <th>Size</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <h3>Order Summary</h3>
+                        <table id="OrderSummary" class="table table-striped table-hover table-bordered">
+                            <tr>
+                                <th>Bill</th>
+                            </tr>
+                            <tr>
+                                <td>Items:</td>
+                                <td id="items">0</td>
+                            </tr>
+                            <tr>
+                                <td>SubTotal:</td>
+                                <td id="subTotal">0</td>
+                            </tr>
+                            <tr>
+                                <td>Tax:</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td id="total">0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+			<footer>
+				<div class="content footer">
+					&copy; Everyday Things
+					<a tittle="Privacy Policy" href="#">Privacy Policy</a>
+					<a tittle="Terms of Service" href="#">Terms of Service</a>
+				</div>
+			</footer>
+			
+		</div>
+
+		<script scr="scrips/js/jquery-3.2.1.js"></script>
+		<script scr="bootstrap/js/bootstrap.js"></script>
+		<script src="scripts/js/index.js"></script>
+	</body>
+</html>
